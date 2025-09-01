@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Nomakhwezi Malusi</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-900 text-gray-100">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 shadow-lg fixed w-full top-0 z-50 border-b border-gray-700">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <div class="text-2xl font-bold text-white">Nomakhwezi Malusi</div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-300 hover:text-blue-400">Home</a>
+                    <a href="about.html" class="text-gray-300 hover:text-blue-400">About</a>
+                    <a href="skills.html" class="text-gray-300 hover:text-blue-400">Skills</a>
+                    <a href="projects.html" class="text-gray-300 hover:text-blue-400">Projects</a>
+                    <a href="certifications.html" class="text-gray-300 hover:text-blue-400">Certifications</a>
+                    <a href="contact.html" class="text-gray-300 hover:text-blue-400">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-gray-300" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block py-2 text-gray-300 hover:text-blue-400">Home</a>
+                <a href="about.html" class="block py-2 text-gray-300 hover:text-blue-400">About</a>
+                <a href="skills.html" class="block py-2 text-gray-300 hover:text-blue-400">Skills</a>
+                <a href="projects.html" class="block py-2 text-gray-300 hover:text-blue-400">Projects</a>
+                <a href="certifications.html" class="block py-2 text-gray-300 hover:text-blue-400">Certifications</a>
+                <a href="contact.html" class="block py-2 text-gray-300 hover:text-blue-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Skills Section -->
+    <section class="py-24 bg-gray-900 min-h-screen">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl font-bold text-white mb-4">Technical Skills</h1>
+                <div class="w-24 h-1 bg-blue-500 mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-gray-800 p-8 rounded-lg shadow-2xl card-hover border border-gray-700">
+                    <h2 class="text-2xl font-semibold mb-6 text-white flex items-center">
+                        <span class="w-3 h-3 bg-blue-400 rounded-full mr-3"></span>
+                        Programming Languages
+                    </h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag bg-blue-900 text-blue-300 px-4 py-2 rounded-full font-medium border border-blue-700">C#</span>
+                        <span class="skill-tag bg-purple-900 text-purple-300 px-4 py-2 rounded-full font-medium border border-purple-700">Python</span>
+                        <span class="skill-tag bg-yellow-900 text-yellow-300 px-4 py-2 rounded-full font-medium border border-yellow-700">JavaScript</span>
+                        <span class="skill-tag bg-orange-900 text-orange-300 px-4 py-2 rounded-full font-medium border border-orange-700">HTML</span>
+                        <span class="skill-tag bg-blue-900 text-blue-300 px-4 py-2 rounded-full font-medium border border-blue-700">CSS</span>
+                        <span class="skill-tag bg-green-900 text-green-300 px-4 py-2 rounded-full font-medium border border-green-700">SQL</span>
+                        <span class="skill-tag bg-indigo-900 text-indigo-300 px-4 py-2 rounded-full font-medium border border-indigo-700">R</span>
+                        <span class="skill-tag bg-gray-700 text-gray-300 px-4 py-2 rounded-full font-medium border border-gray-600">SAS</span>
+                    </div>
+                </div>
+                <div class="bg-gray-800 p-8 rounded-lg shadow-2xl card-hover border border-gray-700">
+                    <h2 class="text-2xl font-semibold mb-6 text-white flex items-center">
+                        <span class="w-3 h-3 bg-blue-400 rounded-full mr-3"></span>
+                        Frameworks & Tools
+                    </h2>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="skill-tag bg-purple-900 text-purple-300 px-4 py-2 rounded-full font-medium border border-purple-700">.NET</span>
+                        <span class="skill-tag bg-blue-900 text-blue-300 px-4 py-2 rounded-full font-medium border border-blue-700">ASP.NET</span>
+                        <span class="skill-tag bg-red-900 text-red-300 px-4 py-2 rounded-full font-medium border border-red-700">SQL Server</span>
+                        <span class="skill-tag bg-green-900 text-green-300 px-4 py-2 rounded-full font-medium border border-green-700">R Studio</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 border-t border-gray-700">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-4 md:mb-0">
+                    <p class="text-gray-300">
+                        <i class="fas fa-copyright mr-1"></i>
+                        2025 Nomakhwezi Malusi. Ready to contribute to innovative technology solutions.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

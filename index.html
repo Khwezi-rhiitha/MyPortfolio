@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Nomakhwezi Malusi</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link href="css/tailwind.min.css" rel="stylesheet">
+
+    <style>
+      .gradient-bg {
+        background: linear-gradient(
+          135deg,
+          #1e3a8a 0%,
+          #3730a3 50%,
+          #581c87 100%
+        );
+      }
+    </style>
+  </head>
+  <body class="bg-gray-900 text-gray-100">
+    <!-- Navigation -->
+    <nav
+      class="bg-gray-800 shadow-lg fixed w-full top-0 z-50 border-b border-gray-700"
+    >
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+          <div class="text-2xl font-bold text-white">Nomakhwezi Malusi</div>
+          <div class="hidden md:flex space-x-8">
+            <a href="index.html" class="text-gray-300 hover:text-blue-400"
+              >Home</a
+            >
+            <a href="about.html" class="text-gray-300 hover:text-blue-400"
+              >About</a
+            >
+            <a href="skills.html" class="text-gray-300 hover:text-blue-400"
+              >Skills</a
+            >
+            <a href="projects.html" class="text-gray-300 hover:text-blue-400"
+              >Projects</a
+            >
+            <a
+              href="certifications.html"
+              class="text-gray-300 hover:text-blue-400"
+              >Certifications</a
+            >
+            <a href="contact.html" class="text-gray-300 hover:text-blue-400"
+              >Contact</a
+            >
+          </div>
+          <button id="mobile-menu-btn" class="md:hidden text-gray-300" aria-label="Toggle menu" >
+            <i class="fas fa-bars text-xl"></i>
+          </button>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden pb-4">
+          <a
+            href="index.html"
+            class="block py-2 text-gray-300 hover:text-blue-400"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="block py-2 text-gray-300 hover:text-blue-400"
+            >About</a
+          >
+          <a
+            href="skills.html"
+            class="block py-2 text-gray-300 hover:text-blue-400"
+            >Skills</a
+          >
+          <a
+            href="projects.html"
+            class="block py-2 text-gray-300 hover:text-blue-400"
+            >Projects</a
+          >
+          <a
+            href="certifications.html"
+            class="block py-2 text-gray-300 hover:text-blue-400"
+            >Certifications</a
+          >
+          <a
+            href="contact.html"
+            class="block py-2 text-gray-300 hover:text-blue-400"
+            >Contact</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div
+      class="gradient-bg text-white pt-20 pb-16 min-h-screen flex items-center"
+    >
+      <div class="max-w-6xl mx-auto px-4 text-center">
+        <div class="py-16">
+          <!-- Profile Image -->
+          <div class="w-32 h-32 mx-auto mb-8">
+            <img
+              id="profile-image"
+              src="images/myphoto.jpg"
+              alt="Nomakhwezi Malusi"
+              class="w-full h-full rounded-full object-cover border-4 border-blue-400 shadow-lg"
+              onerror="this.style.display='none'; document.getElementById('profile-placeholder').style.display='flex';">
+            <div
+              id="profile-placeholder"
+              class="w-32 h-32 bg-gray-700 rounded-full flex items-center justify-center border-4 border-blue-400"
+              style="display: none">
+              <i class="fas fa-user text-4xl text-blue-400"></i>
+            </div>
+          </div>
+
+          <h1 class="text-5xl md:text-6xl font-bold mb-4">Nomakhwezi Malusi</h1>
+          <h2 class="text-2xl md:text-3xl mb-8 text-blue-100">
+            <i class="fas fa-graduation-cap mr-2"></i>
+            IT Graduate - Computer Science & Business Management
+          </h2>
+          <p class="text-xl mb-8 max-w-3xl mx-auto leading-relaxed">
+            A Dedicated and detail-oriented IT graduate with expertise in data
+            analysis, software development, and database management.
+          </p>
+
+          <!-- Social Media Links -->
+          <div class="flex justify-center space-x-6 mb-8">
+            <a
+              href="https://linkedin.com/in/nomakhwezi-malusi"
+              target="_blank"
+              class="bg-blue-600 p-3 rounded-full hover:bg-blue-700"
+              aria-label="Visit LinkedIn page"
+            >
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a
+              href="https://instagram.com/nomakhwezi_malusi"
+              target="_blank"
+              class="bg-pink-600 p-3 rounded-full hover:bg-pink-700"
+              aria-label="Visit Instagram page"
+            >
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="about.html"
+              class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700"
+            >
+              <i class="fas fa-info-circle mr-2"></i>Learn More
+            </a>
+            <a
+              href="contact.html"
+              class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white"
+            >
+              <i class="fas fa-paper-plane mr-2"></i>Get In Touch
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 border-t border-gray-700">
+      <div class="max-w-6xl mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0">
+            <p class="text-gray-300">
+              <i class="fas fa-copyright mr-1"></i>
+              2025 Nomakhwezi Malusi. Ready to contribute to innovative
+              technology solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
