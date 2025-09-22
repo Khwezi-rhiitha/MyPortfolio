@@ -1,31 +1,27 @@
-        /*Mobile menu toggle & Navigation active link*/
-        document.addEventListener("DOMContentLoaded", function () {
+// Mobile menu toggle
+const menuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
 
-            // Mobile menu toggle
-            const btn = document.getElementById('mobile-menu-btn');
-            const menu = document.getElementById('mobile-menu');
+menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+});
 
-            btn.addEventListener('click', function () {
-                menu.classList.toggle('hidden');
-            });
+// Navigation bar active link
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("nav a");  
+    const currentPage = window.location.pathname.split("/").pop();  
 
-            // Navigation active link
-            const links = document.querySelectorAll("nav a");
-            const currentPage = window.location.pathname.split("/").pop();
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("text-blue-400", "font-semibold");  
+        } else {
+            link.classList.remove("text-blue-400", "font-semibold");
+            link.classList.add("text-gray-300", "hover:text-blue-400");
+        }
+    });
+});
 
-            links.forEach(link => {
-                if (link.getAttribute("href") === currentPage) {
-                    link.classList.add("text-blue-400", "font-semibold");
-                    link.classList.remove("text-gray-300");
-                } else {
-                    link.classList.remove("text-blue-400", "font-semibold");
-                    link.classList.add("text-gray-300", "hover:text-blue-400");
-                }
-            });
-        });
-       
-
-        // Contact form functionality
+// Contact form functionality
             function sendEmail(event) {
             event.preventDefault();
             
@@ -65,5 +61,3 @@
                 document.getElementById('contactForm').reset();
             }, 2000);
         }
-
-        

@@ -27,7 +27,7 @@
             <div class="flex justify-between items-center py-4">
                 <div class="text-2xl font-bold text-white">Nomakhwezi Malusi</div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#home" class="text-gray-300 hover:text-blue-400">Home</a>
+                    <a href="#index" class="text-gray-300 hover:text-blue-400">Home</a>
                     <a href="#about" class="text-gray-300 hover:text-blue-400">About</a>
                     <a href="#skills" class="text-gray-300 hover:text-blue-400">Skills</a>
                     <a href="#projects" class="text-gray-300 hover:text-blue-400">Projects</a>
@@ -39,7 +39,7 @@
                 </button>
             </div>
             <div id="mobile-menu" class="hidden md:hidden pb-4">
-                <a href="#home" class="block py-2 text-gray-300 hover:text-blue-400">Home</a>
+                <a href="#index" class="block py-2 text-gray-300 hover:text-blue-400">Home</a>
                 <a href="#about" class="block py-2 text-gray-300 hover:text-blue-400">About</a>
                 <a href="#skills" class="block py-2 text-gray-300 hover:text-blue-400">Skills</a>
                 <a href="#projects" class="block py-2 text-gray-300 hover:text-blue-400">Projects</a>
@@ -79,38 +79,49 @@
             analysis, software development, and database management.
           </p>
 
+
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="about.html"
+              class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700">
+              <i class="fas fa-info-circle mr-2"></i>Learn More
+            </a>
+            <a
+              href="contact.html"
+              class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white">
+              <i class="fas fa-paper-plane mr-2"></i>Get In Touch
+            </a>
+            <a
+              href="documents/resume/CV_NRM.pdf"
+              target="_blank"
+              class="bg-purple-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-purple-700">
+              <i class="fas fa-file-alt mr-2"></i>View CV
+            </a>
+          </div>
+
+
           <!-- Social Media Links -->
-          <div class="flex justify-center space-x-6 mb-8">
+          <div class="flex justify-center space-x-6 mb-8 mt-8">
             <a
               href="https://www.linkedin.com/in/nomakhwezi-malusi-3274a6225"
               target="_blank"
               class="bg-blue-600 p-3 rounded-full hover:bg-blue-700"
-              aria-label="Visit LinkedIn page"
-            >
+              aria-label="Visit LinkedIn page">
               <i class="fab fa-linkedin-in text-xl"></i>
             </a>
             <a
               href="https://www.instagram.com/khwets?igsh=dHA3b3lud29tNGk1"
               target="_blank"
               class="bg-pink-600 p-3 rounded-full hover:bg-pink-700"
-              aria-label="Visit Instagram page"
-            >
+              aria-label="Visit Instagram page">
               <i class="fab fa-instagram text-xl"></i>
             </a>
-          </div>
-
-          <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="about.html"
-              class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700"
-            >
-              <i class="fas fa-info-circle mr-2"></i>Learn More
-            </a>
-            <a
-              href="contact.html"
-              class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white"
-            >
-              <i class="fas fa-paper-plane mr-2"></i>Get In Touch
+              href="https://github.com/Khwezi-rhiitha"
+              target="_blank"
+              class="bg-gray-600 p-3 rounded-full hover:bg-black-700"
+              aria-label="Visit GitHub profile">
+              <i class="fab fa-github text-xl"></i>
             </a>
           </div>
         </div>
@@ -156,23 +167,17 @@
 
           <div class="bg-gray-700 p-8 rounded-lg border border-gray-600">
             <h2
-              class="text-3xl font-semibold mb-6 text-white flex items-center"
-            >
-              Core Competencies
+              class="text-3xl font-semibold mb-6 text-white flex items-center">Core Competencies
             </h2>
             <ul class="space-y-4">
               <li class="flex items-center p-3 bg-gray-800 rounded-lg">
                 <span class="text-gray-300 font-medium">Data Analysis</span>
               </li>
               <li class="flex items-center p-3 bg-gray-800 rounded-lg">
-                <span class="text-gray-300 font-medium"
-                  >Software Development</span
-                >
+                <span class="text-gray-300 font-medium">Software Development</span>
               </li>
               <li class="flex items-center p-3 bg-gray-800 rounded-lg">
-                <span class="text-gray-300 font-medium"
-                  >Database Management</span
-                >
+                <span class="text-gray-300 font-medium">Database Management</span>
               </li>
               <li class="flex items-center p-3 bg-gray-800 rounded-lg">
                 <span class="text-gray-300 font-medium">Business Analysis</span>
@@ -193,8 +198,7 @@
             <a
               href="documents/resume/CV_NRM.pdf"
               download
-              class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-lg text-center transition-colors flex flex-col items-center justify-between h-full"
-            >
+              class="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-lg text-center transition-colors flex flex-col items-center justify-between h-full">
               <i class="fas fa-file-alt text-2xl mb-2 block"></i>
               <span class="font-medium">Curriculum Vitae</span>
               <p class="text-xs mt-1 opacity-80">PDF Format</p>
@@ -247,6 +251,7 @@
                         <span class="skill-tag bg-blue-900 text-blue-300 px-4 py-2 rounded-full font-medium border border-blue-700">ASP.NET</span>
                         <span class="skill-tag bg-red-900 text-red-300 px-4 py-2 rounded-full font-medium border border-red-700">SQL Server</span>
                         <span class="skill-tag bg-green-900 text-green-300 px-4 py-2 rounded-full font-medium border border-green-700">R Studio</span>
+                        <span class="skill-tag bg-brown-900 text-brown-300 px-4 py-2 rounded-full font-medium border border-brown-700">Microsoft Office</span>
                     </div>
                 </div>
             </div>
@@ -382,29 +387,43 @@
                 <div class="bg-gradient-to-br from-blue-900 to-indigo-900 p-6 rounded-lg shadow-2xl card-hover border-l-4 border-blue-400">
                     <h3 class="font-semibold text-lg text-white mb-2">ISC2 Candidate</h3>
                     <p class="text-blue-400 font-medium mb-2">June 2025</p>
-                    <p class="text-gray-300 text-sm">Cybersecurity certification pathway |
+                    <p class="text-gray-300 text-sm">Cybersecurity certification pathway Badge |
                         <a href="https://www.credly.com/users/nomakhwezi-malusi" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Link</a>
                     </p>
                 </div>
                 <div class="bg-gradient-to-br from-blue-900 to-indigo-900 p-6 rounded-lg shadow-2xl card-hover border-l-4 border-blue-400">
                     <h3 class="font-semibold text-lg text-white mb-2">AWS Educate</h3>
                     <p class="text-blue-400 font-medium mb-2">July 2025</p>
-                    <p class="text-gray-300 text-sm">Introduction to Cloud 101 |
+                    <p class="text-gray-300 text-sm">Introduction to Cloud 101 Badge |
                         <a href="https://www.credly.com/users/nomakhwezi-malusi" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Link</a>
                     </p>
                 </div>
                 <div class="bg-gradient-to-br from-blue-900 to-indigo-900 p-6 rounded-lg shadow-2xl card-hover border-l-4 border-blue-400 md:col-span-2 lg:col-span-1">
                     <h3 class="font-semibold text-lg text-white mb-2">FNB App Academy</h3>
                     <p class="text-blue-400 font-medium mb-2">July 2025</p>
-                    <p class="text-gray-300 text-sm">Full Stack Development |
+                    <p class="text-gray-300 text-sm">Full Stack Development Certificate |
                         <a href="documents/certificates/FNBAppAcademyCetificate.pdf" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Link</a>
                     </p>
                 </div>
                 <div class="bg-gradient-to-br from-blue-900 to-indigo-900 p-6 rounded-lg shadow-2xl card-hover border-l-4 border-blue-400">
                     <h3 class="font-semibold text-lg text-white mb-2">AWS Educate</h3>
                     <p class="text-blue-400 font-medium mb-2">August 2025</p>
-                    <p class="text-gray-300 text-sm">Introduction to Generative AI |
+                    <p class="text-gray-300 text-sm">Introduction to Generative AI Badge |
                         <a href="https://www.credly.com/users/nomakhwezi-malusi" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Link</a>
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-900 to-indigo-900 p-6 rounded-lg shadow-2xl card-hover border-l-4 border-blue-400">
+                    <h3 class="font-semibold text-lg text-white mb-2">CISCO Network Academy</h3>
+                    <p class="text-blue-400 font-medium mb-2">September 2025</p>
+                    <p class="text-gray-300 text-sm">Introduction to Cybersecurity Badge |
+                        <a href="https://www.credly.com/users/nomakhwezi-malusi" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Link</a>
+                    </p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-900 to-indigo-900 p-6 rounded-lg shadow-2xl card-hover border-l-4 border-blue-400">
+                    <h3 class="font-semibold text-lg text-white mb-2">CISCO Network Academy</h3>
+                    <p class="text-blue-400 font-medium mb-2">September 2025</p>
+                    <p class="text-gray-300 text-sm">Introduction to Cybersecurity Certificate |
+                        <a href="documents/certificates/CISCO_IntroductionCybersecurity.pdf" target="_blank" class="text-blue-400 hover:text-blue-300 underline">Link</a>
                     </p>
                 </div>
             </div>
