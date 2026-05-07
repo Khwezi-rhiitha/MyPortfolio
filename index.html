@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -94,13 +94,17 @@
       <div class="max-w-6xl mx-auto px-4 text-center">
         <div class="py-16">
           <!-- Profile Image -->
-          <div class="w-32 h-32 mx-auto mb-8">
+          <div class="w-32 h-30 mx-auto mb-8">
             <img
               id="profile-image"
               src="images/myphoto.jpg"
               alt="Nomakhwezi Malusi"
               class="w-full h-full rounded-full object-cover border-4 border-blue-400 shadow-lg"
-              onerror="this.style.display='none'; document.getElementById('profile-placeholder').style.display='flex';"
+              onerror="
+                this.style.display = 'none';
+                document.getElementById('profile-placeholder').style.display =
+                  'flex';
+              "
             />
             <div
               id="profile-placeholder"
@@ -123,13 +127,13 @@
 
           <div class="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="about.html"
+              href="#about"
               class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700"
             >
               <i class="fas fa-info-circle mr-2"></i>Learn More
             </a>
             <a
-              href="contact.html"
+              href="#contact"
               class="border-2 border-blue-400 text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-blue-400 hover:text-white"
             >
               <i class="fas fa-paper-plane mr-2"></i>Get In Touch
@@ -257,7 +261,7 @@
               <p class="text-xs mt-1 opacity-80">PDF Format</p>
             </a>
             <a
-              href="documents/resume/CoverLetterWork.pdf"
+              href="documents/resume/CoverLetter_Tech.pdf"
               download
               class="bg-blue-600 hover:bg-purple-700 text-white p-4 rounded-lg text-center transition-colors flex flex-col items-center justify-between h-full"
             >
@@ -351,6 +355,10 @@
               <span
                 class="skill-tag bg-brown-900 text-brown-300 px-4 py-2 rounded-full font-medium border border-brown-700"
                 >Microsoft Office</span
+              >
+              <span
+                class="skill-tag bg-indigo-900 text-indigo-300 px-4 py-2 rounded-full font-medium border border-indigo-700"
+                >Azure Fundamentals</span
               >
             </div>
           </div>
@@ -518,6 +526,7 @@
               View Project
             </a>
           </div>
+
           <!-- SQL Data Warehouse Project -->
           <div class="project-card p-6 rounded-lg">
             <div class="mb-4">
@@ -656,6 +665,49 @@
               View Project
             </a>
           </div>
+          <!-- Software Engineering Project - ITSL -->
+          <div class="project-card p-6 rounded-lg">
+            <div class="mb-4">
+              <div
+                class="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-4 mx-auto"
+              >
+                <i class="fab fa-js-square text-2xl text-white"></i>
+              </div>
+              <h2 class="text-2xl font-semibold text-white mb-2 text-center">
+                Software Engineering Project - ITSL
+              </h2>
+              <p class="text-gray-300 text-center mb-4">
+                The "ITSL Management System" is a strategic documentation
+                project designed to resolve key operational hurdles within the
+                ITSL program. By centralizing communication, improving access to
+                resources, and fostering better collaboration, the system aims
+                to elevate the educational experience for everyone involved.
+              </p>
+            </div>
+
+            <div class="space-y-3 mb-6">
+              <div class="flex items-center text-sm text-gray-400">
+                <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                Functionalities
+              </div>
+              <div class="flex items-center text-sm text-gray-400">
+                <span class="w-2 h-2 bg-blue-400 rounded-full mr-2"></span>
+                UML Diagrams
+              </div>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span
+                class="bg-orange-900 text-orange-300 px-3 py-1 rounded-full text-xs border border-orange-700"
+                >Google Docs</span
+              >
+            </div>
+            <a
+              href="documents/SoftwareEngineering_ITSL_ManagementSystem.pdf"
+              class="w-full bg-blue-600 text-white py-3 px-4 rounded-lg hover:bg-blue-700 font-semibold text-center inline-block"
+            >
+              View Project
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -765,6 +817,21 @@
               Introduction to Cybersecurity Certificate |
               <a
                 href="documents/certificates/CISCO_IntroductionCybersecurity.pdf"
+                target="_blank"
+                class="text-blue-400 hover:text-blue-300 underline"
+                >Link</a
+              >
+            </p>
+          </div>
+          <div
+            class="bg-gradient-to-br from-blue-900 to-indigo-900 p-6 rounded-lg shadow-2xl card-hover border-l-4 border-blue-400 md:col-span-2 lg:col-span-1"
+          >
+            <h3 class="font-semibold text-lg text-white mb-2">Micrsoft</h3>
+            <p class="text-blue-400 font-medium mb-2">May 2026</p>
+            <p class="text-gray-300 text-sm">
+              Microsoft Certified: Azure Fundamentals |
+              <a
+                href="documents/certificates/MicrosoftAzureFundamentals.pdf"
                 target="_blank"
                 class="text-blue-400 hover:text-blue-300 underline"
                 >Link</a
